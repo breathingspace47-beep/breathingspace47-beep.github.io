@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Homage Inclusive Services | Dignity. Support with Purpose.</title>
+<meta name="description" content="Homage Inclusive Services provides specialist domiciliary respite and community-based support for young people and young adults aged 16–25 across Basildon, Wickford and Billericay.">
+<style>
+:root{
+  --purple:#45257d;
+  --purple-dark:#2e185b;
+  --gold:#c79a3b;
+  --cream:#faf8f4;
+  --text:#29252f;
+  --muted:#655f6d;
+  --white:#ffffff;
+  --border:#e9e3d8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.65}
+a{color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{height:58px;width:auto}
+.navlinks{display:flex;gap:25px;font-size:.95rem;font-weight:700}
+.navlinks a{text-decoration:none;color:var(--purple)}
+.navlinks a:hover{color:var(--gold)}
+.hero{background:linear-gradient(135deg,#f8f5fb 0%,#fff 60%,#faf7ef 100%);padding:75px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+.eyebrow{display:inline-block;color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.8rem;margin-bottom:12px}
+h1{font-family:Georgia,serif;color:var(--purple-dark);font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.05;margin:0 0 18px}
+.hero h2{font-size:1.35rem;color:var(--purple);margin:0 0 18px;font-weight:700}
+.hero p{font-size:1.08rem;color:var(--muted);max-width:680px}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+.badge{border:1px solid #ded5c5;border-radius:999px;padding:8px 14px;background:#fff;color:var(--purple);font-size:.9rem;font-weight:700}
+.hero-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:24px;box-shadow:0 18px 50px rgba(50,35,75,.10)}
+.hero-card img{display:block;width:100%;border-radius:16px}
+.section{padding:78px 0}
+.section.alt{background:var(--cream)}
+.section-title{text-align:center;max-width:760px;margin:0 auto 45px}
+.section-title .eyebrow{margin-bottom:5px}
+h2{font-family:Georgia,serif;color:var(--purple-dark);font-size:clamp(2rem,3.5vw,3rem);line-height:1.15;margin:0 0 14px}
+.section-title p{color:var(--muted);font-size:1.05rem}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.about-box{padding:30px;border-radius:20px;background:#fff;border:1px solid var(--border)}
+.about-box h3{color:var(--purple);margin-top:0;font-size:1.35rem}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.service{background:#fff;border:1px solid var(--border);border-radius:18px;padding:28px}
+.icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#f1eaf9;color:var(--purple);font-size:1.35rem;margin-bottom:15px}
+.service h3{margin:0 0 8px;color:var(--purple);font-size:1.2rem}
+.service p{margin:0;color:var(--muted)}
+.focus{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.focus-item{padding:25px;background:#fff;border-radius:18px;border:1px solid var(--border);text-align:center}
+.focus-item strong{display:block;color:var(--purple);font-size:1.05rem;margin-bottom:6px}
+.area{background:var(--purple);color:#fff}
+.area h2,.area .eyebrow{color:#fff}
+.area .eyebrow{color:#e5c46e}
+.area-content{text-align:center;max-width:850px;margin:auto}
+.area-list{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:25px}
+.area-pill{border:1px solid rgba(255,255,255,.35);padding:10px 18px;border-radius:999px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:stretch}
+.contact-card{border:1px solid var(--border);border-radius:20px;padding:30px}
+.contact-card h3{color:var(--purple);margin-top:0}
+.contact-link{display:block;text-decoration:none;padding:13px 0;border-bottom:1px solid var(--border);font-weight:700;color:var(--purple)}
+.contact-link:last-child{border-bottom:0}
+.cta{background:linear-gradient(135deg,#f6f0fb,#fbf8ef);text-align:center;border-radius:24px;padding:42px 25px}
+footer{background:#24143f;color:#ddd;padding:30px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer-inner strong{color:#fff}
+.small{font-size:.88rem;color:#cfc7d9}
+@media(max-width:800px){
+  .navlinks{display:none}
+  .hero-grid,.about,.contact{grid-template-columns:1fr}
+  .services{grid-template-columns:1fr}
+  .focus{grid-template-columns:1fr}
+  .hero{padding-top:45px}
+  .hero-card{max-width:520px;margin:auto}
+  .footer-inner{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Homage Inclusive Services home">
+      <img src="homage-logo.jpg" alt="Homage Inclusive Services logo">
+    </a>
+    <nav class="navlinks">
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#transition">Our Focus</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Specialist support • South Essex</span>
+      <h1>Homage Inclusive Services</h1>
+      <h2>Dignity. Support with Purpose.</h2>
+      <p>Specialist domiciliary respite and community-based support for young people and young adults aged 16–25, with a focus on person-centred support, independence, community inclusion and family resilience.</p>
+      <div class="badges">
+        <span class="badge">Ages 16–25</span>
+        <span class="badge">1:1 &amp; 2:1 Support</span>
+        <span class="badge">Basildon</span>
+        <span class="badge">Wickford</span>
+        <span class="badge">Billericay</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img src="homage-logo.jpg" alt="Homage Inclusive Services">
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Who we are</span>
+      <h2>Support that is personal, flexible and purposeful</h2>
+      <p>Homage Inclusive Services is developing a local specialist service for children, young people and young adults with Special Educational Needs and Disabilities (SEND).</p>
+    </div>
+    <div class="about">
+      <div class="about-box">
+        <h3>Our approach</h3>
+        <p>We focus on bespoke, person-centred home and community support rather than relying solely on standard group-based activities. Our proposed model is designed to respond to individual needs, including complex needs, sensory vulnerabilities and the challenges associated with transition to adulthood.</p>
+      </div>
+      <div class="about-box">
+        <h3>Supporting families</h3>
+        <p>Our service aims to provide meaningful and dependable respite for parent carers and unpaid family carers while helping young people build confidence, participate in their communities and develop pathways towards greater independence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="services">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">What we offer</span>
+      <h2>Our proposed support services</h2>
+      <p>Flexible support designed around the individual and their family.</p>
+    </div>
+    <div class="services">
+      <article class="service">
+        <div class="icon">⌂</div>
+        <h3>Individualised Domiciliary Respite</h3>
+        <p>Planned or flexible support within the family home, providing parent carers and unpaid family carers with a sustainable break from intensive caring responsibilities.</p>
+      </article>
+      <article class="service">
+        <div class="icon">♡</div>
+        <h3>1:1 and 2:1 Community Access</h3>
+        <p>Supporting individuals to access local amenities, develop social confidence and enjoy recreational activities safely, with appropriate planning and risk management.</p>
+      </article>
+      <article class="service">
+        <div class="icon">↗</div>
+        <h3>Independence &amp; Life Skills</h3>
+        <p>Supporting young people and young adults with community orientation, practical life skills and pathways towards greater independence.</p>
+      </article>
+      <article class="service">
+        <div class="icon">◷</div>
+        <h3>Flexible &amp; Out-of-Hours Support</h3>
+        <p>Our proposed service model is designed to respond to high-demand periods, including early mornings, evenings, weekends and school holidays.</p>
+      </article>
+      <article class="service">
+        <div class="icon">✦</div>
+        <h3>Complex Needs Support</h3>
+        <p>Tailored options for individuals whose behavioural or sensory needs may make traditional group environments difficult to navigate.</p>
+      </article>
+      <article class="service">
+        <div class="icon">⇄</div>
+        <h3>Transition to Adulthood</h3>
+        <p>A focus on continuity, community participation and independence during the transition from children's services towards adult life.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="transition">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Our focus</span>
+      <h2>Supporting the 16–25 transition</h2>
+      <p>Transitioning from children's services to adult social care can be an important period for young people and their families. Our proposed framework focuses on continuity and independence.</p>
+    </div>
+    <div class="focus">
+      <div class="focus-item"><strong>Life Skills</strong>Developing practical skills and confidence.</div>
+      <div class="focus-item"><strong>Community Inclusion</strong>Supporting safe and meaningful participation.</div>
+      <div class="focus-item"><strong>Family Resilience</strong>Providing structured respite for carers.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section area">
+  <div class="container area-content">
+    <span class="eyebrow">Where we work</span>
+    <h2>Serving South Essex communities</h2>
+    <p>Our service is being developed with a locality focus across Basildon, Wickford and Billericay, with the aim of responding to local needs and working collaboratively with families and professionals.</p>
+    <div class="area-list">
+      <span class="area-pill">Basildon</span>
+      <span class="area-pill">Wickford</span>
+      <span class="area-pill">Billericay</span>
+      <span class="area-pill">South Essex</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Contact Homage Inclusive Services</h2>
+      <p>For enquiries about our developing service, please contact us using the details below.</p>
+    </div>
+    <div class="contact">
+      <div class="contact-card">
+        <h3>Homage Inclusive Services</h3>
+        <p><strong>Director:</strong> Honorie Anang</p>
+        <a class="contact-link" href="tel:+447944877011">☎ 07944 877011</a>
+        <a class="contact-link" href="mailto:HonorieAnang@googlemail.com">✉ HonorieAnang@googlemail.com</a>
+      </div>
+      <div class="cta">
+        <h3 style="color:var(--purple);font-family:Georgia,serif;font-size:1.7rem">Dignity. Support with Purpose.</h3>
+        <p>Person-centred support. Meaningful community participation. Greater independence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>Homage Inclusive Services</strong><br><span class="small">Specialist domiciliary respite &amp; community-based support</span></div>
+    <div class="small">© 2026 Homage Inclusive Services</div>
+  </div>
+</footer>
+</body>
+</html>
